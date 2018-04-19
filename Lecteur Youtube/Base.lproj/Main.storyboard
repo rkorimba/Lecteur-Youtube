@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,6 +22,43 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hm7-7i-Gzq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChansonCell" rowHeight="163" id="ApF-pq-vgj" customClass="ChansonCell" customModule="Lecteur_Youtube" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="163"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ApF-pq-vgj" id="FYd-s0-Ily">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="162.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XIJ-Nc-tMs">
+                                                    <rect key="frame" x="8" y="6" width="150" height="150.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="KDb-Mw-0pJ"/>
+                                                        <constraint firstAttribute="height" constant="150" id="gE5-NR-5hX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2P-QO-bvb">
+                                                    <rect key="frame" x="166" y="16" width="194" height="141"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="C2P-QO-bvb" firstAttribute="top" secondItem="FYd-s0-Ily" secondAttribute="topMargin" constant="5" id="Q2X-0n-jcW"/>
+                                                <constraint firstItem="XIJ-Nc-tMs" firstAttribute="leading" secondItem="FYd-s0-Ily" secondAttribute="leading" constant="8" id="cs0-Sp-Zyh"/>
+                                                <constraint firstItem="C2P-QO-bvb" firstAttribute="leading" secondItem="XIJ-Nc-tMs" secondAttribute="trailing" constant="8" id="fJ4-q8-zic"/>
+                                                <constraint firstItem="C2P-QO-bvb" firstAttribute="bottom" secondItem="FYd-s0-Ily" secondAttribute="bottomMargin" constant="5" id="rYD-oN-Sv5"/>
+                                                <constraint firstItem="C2P-QO-bvb" firstAttribute="trailing" secondItem="FYd-s0-Ily" secondAttribute="trailingMargin" id="sIu-39-VgO"/>
+                                                <constraint firstItem="XIJ-Nc-tMs" firstAttribute="centerY" secondItem="FYd-s0-Ily" secondAttribute="centerY" id="w6U-c7-5ny"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artisteEtTitreLabel" destination="C2P-QO-bvb" id="c2l-Ut-AZL"/>
+                                            <outlet property="miniature" destination="XIJ-Nc-tMs" id="I7o-M9-qSK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,4 +98,7 @@
             <point key="canvasLocation" x="140" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="960" height="553"/>
+    </resources>
 </document>
