@@ -14,6 +14,7 @@
 		D028EAA02088D1D300E34687 /* TableauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028EA9F2088D1D300E34687 /* TableauController.swift */; };
 		D028EAA42088D42F00E34687 /* Chanson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028EAA32088D42F00E34687 /* Chanson.swift */; };
 		D028EAA62088DDB600E34687 /* ChansonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028EAA52088DDB600E34687 /* ChansonCell.swift */; };
+		D028EAA82088E65100E34687 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028EAA72088E65100E34687 /* VideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D028EA9F2088D1D300E34687 /* TableauController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableauController.swift; sourceTree = "<group>"; };
 		D028EAA32088D42F00E34687 /* Chanson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chanson.swift; sourceTree = "<group>"; };
 		D028EAA52088DDB600E34687 /* ChansonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChansonCell.swift; sourceTree = "<group>"; };
+		D028EAA72088E65100E34687 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D028EA9F2088D1D300E34687 /* TableauController.swift */,
 				D028EAA32088D42F00E34687 /* Chanson.swift */,
 				D028EAA52088DDB600E34687 /* ChansonCell.swift */,
+				D028EAA72088E65100E34687 /* VideoController.swift */,
 			);
 			path = "Lecteur Youtube";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D028EAA82088E65100E34687 /* VideoController.swift in Sources */,
 				D028EAA02088D1D300E34687 /* TableauController.swift in Sources */,
 				D028EA8E2088CE3100E34687 /* AppDelegate.swift in Sources */,
 				D028EAA62088DDB600E34687 /* ChansonCell.swift in Sources */,
